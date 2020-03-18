@@ -3,13 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <include layout="@layout/layout_toolbar_transparent" />
 
     <fragment
-        android:layout_below="@+id/toolbarLLT"
         android:id="@+id/fragment"
+        android:name="com.epimetrics.Fragment.GenderFragment"
+        android:layout_below="@+id/toolbarLLT"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
