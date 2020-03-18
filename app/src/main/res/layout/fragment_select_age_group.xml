@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar_transparent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLLT"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/heading"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:padding="20dp"
+                    android:text="@string/text_select_gender"
+                    android:textColor="@color/colorBlue" />
+
+                <TextView
+                    android:id="@+id/details"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:padding="20dp"
+                    android:text="@string/text_select_gender"
+                    android:textColor="@color/colorBlue" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/ageSelectionRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+
+                    <com.epimetrics.helper.ToggleButtonGroupTableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/ageRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TableRow>
+                            <RadioButton
+                                android:id="@+id/ageGroupZeroToTwo"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/string_age_group_one" />
+
+                            <RadioButton
+                                android:id="@+id/ageGroupTwentyFiveToForty"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/string_age_group_four" />
+                        </TableRow>
+
+                        <TableRow>
+                            <RadioButton
+                                android:id="@+id/ageGroupTwoToTen"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/string_age_group_two" />
+
+                            <RadioButton
+                                android:id="@+id/ageGroupFortyToSixty"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/string_age_group_five" />
+                        </TableRow>
+
+                        <TableRow>
+                            <RadioButton
+                                android:id="@+id/ageGroupTenToTwentyFive"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/string_age_group_three" />
+
+                            <RadioButton
+                                android:id="@+id/ageGroupSixtyPlus"
+                                android:layout_width="0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/string_age_group_six" />
+
+                        </TableRow>
+                    </com.epimetrics.helper.ToggleButtonGroupTableLayout>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/ageRadioGroup"
+                        android:id="@+id/next"
+                        android:visibility="gone"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_background_oval_shape_blue"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/text_submit"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

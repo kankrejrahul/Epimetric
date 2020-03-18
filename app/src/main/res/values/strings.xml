@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">EpiMetrics</string>
+
+    <string name="field_required">This field required</string>
+    <string name="password_not_match">Password not match</string>
+    <string name="error_field_password_length">Password needs to be minimum 8 digits</string>
+    <string name="error_field_password_mismatch">Password mismatch</string>
+    <string name="error_field_phone_length">Number should to 10 digit</string>
+    <string name="error_field_name_incorrect">Only characters allowed</string>
+
+    <string name="terms">I Agree all terms of services.</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_select_symptom">Selected Symptom</string>
+    <string name="text_selected_gender">Selected Gender: ###</string>
+    <string name="text_select_age_group">Selected Age Group: ###</string>
+
+
+
+    <string name="text_severity_level_high">High</string>
+    <string name="text_severity_level_mid">Medium</string>
+    <string name="text_severity_level_low">Low</string>
+
+
+    <string name="text_login_success">Login successfully.</string>
+    <string name="text_new_user">New user.</string>
+    <string name="text_signup">Signup.</string>
+
+    <string name="text_select_gender">Select Gender</string>
+    <string name="text_gender_male">Male</string>
+    <string name="text_gender_female">Female</string>
+
+    <string name="text_age_group">Select Age Group</string>
+
+    <string name="incorrect_email">Email is not correct</string>
+
+
+    <string name="connection_failed">Connection failed,please try again</string>
+    <string name="internet_not_found">Please connect to internet and try again</string>
+
+    <string name="string_age_group_one">0 - 2 years</string>
+    <string name="string_age_group_two">2 - 10 years</string>
+    <string name="string_age_group_three">10 - 25 years</string>
+    <string name="string_age_group_four">25 To 40 years</string>
+    <string name="string_age_group_five">40 - 60 years</string>
+    <string name="string_age_group_six">60+ years</string>
+
+    <string name="string_symptoms_one">Shortness of Breath</string>
+    <string name="string_symptoms_two">Dry Cough</string>
+    <string name="string_symptoms_three">Muscle Pain</string>
+    <string name="string_symptoms_four">Body ache</string>
+    <string name="string_symptoms_five">Sweating</string>
+    <string name="string_symptoms_six">Sneezing</string>
+    <string name="string_symptoms_seven">Sore Throat</string>
+</resources>
